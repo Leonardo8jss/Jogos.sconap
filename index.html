@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teksconap - O Jogo</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f0f0; }
+        #caixa { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        button { margin: 10px; padding: 15px 30px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1 id="titulo">teksconap</h1>
+        <p id="historia">Você encontrou um computador antigo ligado. O que você faz?</p>
+        <button onclick="fase2()">Tentar hackear</button>
+        <button onclick="alert('Você fugiu! Fim de jogo.')">Sair correndo</button>
+    </div>
+
+    <script>
+        function fase2() {
+            document.getElementById('historia').innerText = "Você entrou no sistema! O que quer fazer agora?";
+            // Aqui você adiciona mais fases...
+        }
+    </script>
+</body>
+</html>
